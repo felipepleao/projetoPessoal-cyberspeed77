@@ -1,44 +1,44 @@
-:root { 
-  font-size: 62.5%; 
-  font-family: 'Blender Pro' , sans-serif;
+:root {
+  font-size: 62.5%;
+  --font-blenderPro: 'Blender Pro', sans-serif;
 }
 
 .font-1-xs {
-  font: 500 1.2rem/1.35;
+  font: 500 1.2rem/1.35 var(--font-blenderPro);
 }
 
 .font-2-xs {
-  font: 400 1.4rem/1.43;
+  font: 400 1.4rem/1.43 var(--font-blenderPro);
 }
 
 .font-1-s {
-  font: 500 1.6rem/1.5;
+  font: 500 1.6rem/1.5 var(--font-blenderPro);
 }
 
 .font-2-s {
-  font: 400 1.6rem/1.5;
+  font: 400 1.6rem/1.5 var(--font-blenderPro);
 }
 
 .font-1-m,
 .font-1-m-b {
-  font: 500 1.8rem/1.35;
+  font: 500 1.8rem/1.35 var(--font-blenderPro);
 }
 
 .font-1-m-b {
-  font-weight: 600;
+  font-weight: 600 var(--font-blenderPro);
 }
 
 .font-2-m {
-  font: 500 1.8rem/1.35;
+  font: 500 1.8rem/1.35 var(--font-blenderPro);
 }
 
 .font-1-l {
-  font: 500 2.4rem/1.5;
+  font: 500 2.4rem/1.5 var(--font-blenderPro);
 }
 
 .font-2-l,
 .font-2-l-b {
-  font: 400 2.4rem/1.5;
+  font: 400 2.4rem/1.5 var(--font-blenderPro);
 }
 
 .font-2-l-b {
@@ -48,13 +48,13 @@
 }
 
 .font-1-xl {
-  font: 600 3.2rem/1.25;
+  font: 600 3.2rem/1.25 var(--font-blenderPro);
 }
 
 .font-2-xl {
-  font: 500 3.2rem/1.25;
+  font: 500 3.2rem/1.25 var(--font-blenderPro);
 }
 
 .font-1-xxl {
-  font: 600 6.4rem/1.125;
+  font: 600 6.4rem/1.125 var(--font-blenderPro);
 }
