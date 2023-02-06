@@ -64,6 +64,7 @@
 .introducao-conteudo-links .button-magenta,
 .introducao-conteudo-links .button-cyan {
   font-size: clamp(1.6rem, 2vw, 1.8rem);
+  
   text-align: center;
   min-width: 20rem;
 }
