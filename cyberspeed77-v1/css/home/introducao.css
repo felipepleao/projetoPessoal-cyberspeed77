@@ -1,0 +1,134 @@
+.introducao-bg {
+  background-color: var(--cor-2);
+  box-shadow: inset 0 -10rem var(--cor-1);
+  position: relative;
+}
+
+.introducao-bg::before {
+  content: "";
+  display: block;
+  background: url("../../img/icons/divisores/divisor-cima-b.svg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  z-index: 2;
+}
+
+.introducao-bg::after {
+  content: "";
+  display: block;
+  background: url("../../img/icons/divisores/divisor-cima-y.svg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  bottom: 9rem;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 0 4rem;
+}
+
+.introducao-conteudo {
+  padding: 6.5rem 0 24rem 0;
+}
+
+.introducao-conteudo h1 {
+  font-size: clamp(3.2rem, 5.5vw, 6.4rem);
+  font-weight: 500;
+  white-space: nowrap;
+  margin-bottom: 7.2rem;
+}
+
+.introducao-conteudo p {
+  font-size: clamp(1.8rem, 2vw, 2.4rem);
+  max-width: 40ch;
+  margin-bottom: 8rem;
+}
+
+.introducao-conteudo h3 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.introducao-conteudo-links {
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+}
+
+.introducao-conteudo-links .button-magenta,
+.introducao-conteudo-links .button-cyan {
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  text-align: center;
+  min-width: 20rem;
+}
+
+.introducao-imagem {
+  position: relative;
+  display: grid;
+  z-index: 1;
+}
+
+.introducao-imagem::after {
+  content: "";
+  display: block;
+  background: url("../../img/icons/divisores/divisor-baixo-b.svg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  align-self: end;
+}
+
+.introducao-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 0 4rem;
+  }
+
+  .introducao-conteudo {
+    padding: 3.2rem 0 3.2rem 0;
+  }
+
+  .introducao-conteudo h1 {
+    margin-bottom: 3.2rem;
+  }
+
+  .introducao-conteudo p {
+    margin-bottom: 4rem;
+    max-width: none;
+  }
+
+  .introducao-imagem img {
+    border-radius: 5px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .introducao-conteudo h3 {
+    text-align: center;
+  }
+
+  .introducao-conteudo-links {
+    justify-content: center;
+  }
+
+  .introducao-conteudo-links .button-magenta,
+  .introducao-conteudo-links .button-cyan {
+    min-width: 10rem;
+  }
+}

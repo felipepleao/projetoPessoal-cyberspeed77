@@ -1,0 +1,55 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.button-magenta {
+  /* border-radius: 5px; */
+  /* background: var(--cor-5); */
+  padding: 1.6rem 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background: url("../../img/icons/botoes/button-magenta.svg") no-repeat;
+  transition: color 0.3s;
+}
+
+.button-magenta:hover {
+  color: var(--cor-1);  
+}
+
+.button-cyan {
+  /* border-radius: 5px; */
+  /* background: var(--cor-5); */
+  padding: 1.6rem 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background: url("../../img/icons/botoes/button-cyan.svg") no-repeat;
+  transition: color 0.3s;
+}
+
+.button-cyan:hover {
+  color: var(--cor-1);  
+}
+
+
+.button-cyan-transparent {
+  padding: 1.9rem 7.3rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background: url("../../img/icons/botoes/button-cyan-transp.svg") no-repeat;
+  transition: color 0.3s;
+  /* background-size: cover; */
+}
+
+.button-cyan-transparent:hover {
+  color: var(--cor-0);  
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+  
+
+
+}

@@ -1,0 +1,72 @@
+.list-cars {
+  background-color: var(--cor-1);
+  padding: 12rem 0;
+}
+
+.list-cars h2 {
+  font-size: clamp(3.2rem, 5.5vw, 6.4rem);
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.list-cars h2::after {
+  content: "";
+  display: block;
+  background: url("../../img/icons/sublinhados/sublinhado-y.svg") no-repeat;
+  width: 100%;
+  height: 2rem;
+}
+
+.list-cars-section {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  gap: 0 4rem;
+  overflow-x: auto;
+}
+
+.list-cars-section li {
+  min-width: 35rem;
+}
+
+.list-cars-section img {
+  border-radius: 5px;
+  margin-bottom: 1.6rem;
+}
+
+.list-cars-section h3 {
+  color: var(--cor-0);
+  font: 600 3.2rem/1.25 var(--font-blenderPro);
+  display: flex;
+  gap: 0 .8rem;
+  align-items: center;
+}
+
+.list-cars-section h3::before {
+  content: "";
+  display: block;
+  height: .8rem;
+  width: 1.2rem;
+  background-color: var(--cor-6);
+  left: -2rem;
+  transition: width .3s;
+}
+
+.list-cars-section a:hover h3::before {
+  width: 3rem;
+}
+
+.list-cars-section a {
+  color: var(--cor-4);
+  font: 500 1.8rem/1.35 var(--font-blenderPro);
+}
+
+/* Responsividade */
+
+@media (max-width:800px) {
+  .list-cars {    
+    padding: 6rem 0;
+  }
+}
