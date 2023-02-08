@@ -1,6 +1,6 @@
 .footer-bg {
   background-color: var(--cor-2);
-  padding: 4rem 0;
+  padding: 5rem 0;
   position: relative;
 }
 
@@ -64,7 +64,6 @@
 
 .footer img {
   margin: 2rem auto 2rem auto;
-
 }
 
 .footer span {
