@@ -1,0 +1,85 @@
+.footer-bg {
+  background-color: var(--cor-2);
+  padding: 4rem 0;
+  position: relative;
+}
+
+.footer-bg::before {
+  content: "";
+  background: url("../../img/icons/divisores/divisor-header-b.svg") no-repeat;
+  width: 100%;
+  height: 4rem;
+  display: block;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer-navegacao li {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
+  font-family: var(--font-blenderPro);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.footer-navegacao li a {
+  color: var(--cor-1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-navegacao li a::after {
+  content: "";
+  background: url("../../img/icons/setas/arrow.svg") no-repeat;
+  width: 1.5rem;
+  height: 1.4rem;
+  display: block;
+
+}
+
+.footer-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 2rem;
+
+  font-family: var(--font-blenderPro);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.footer-redes-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer img {
+  margin: 2rem auto 2rem auto;
+
+}
+
+.footer span {
+  font-family: var(--font-blenderPro);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--cor-1);
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+  .footer-navegacao li {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
